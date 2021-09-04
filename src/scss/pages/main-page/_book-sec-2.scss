@@ -1,0 +1,51 @@
+.book-sec-2 {
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: flex-end;
+        min-height: 700px;
+        padding: 100px 0;
+    }
+
+    &__content {
+        width: 100%;
+        background-color: rgba(35,35,35,.9);
+        padding: 48px 30px;
+
+        @include respond-to('tablet') {        
+            width: 70%;
+        } 
+
+        @include respond-to('laptop') {  
+            width: 50%;     
+        }  
+    }
+
+    &__subtitle {
+        display: block;
+        color: $white;
+        font-size: 20px;
+        text-transform: capitalize;
+        padding: 20px 0;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding: 5px 0;
+    }
+
+    &__text-holder {
+        max-width: 95%;
+        color: $white;
+        font-size: 16px;
+        line-height: 26px;
+        padding: 20px 0;
+        margin-bottom: 28px;
+    }
+}
+

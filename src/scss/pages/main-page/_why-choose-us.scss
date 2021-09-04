@@ -1,0 +1,91 @@
+.why-choose-us {
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 20px;
+
+        @include respond-to('laptop') {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 120px 0;
+        } 
+    }
+
+    &__info {
+        max-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        margin-bottom: 40px;
+
+        @include respond-to('laptop') {
+            max-width: 50%;
+            justify-content: space-between;
+            margin: 0;
+        }   
+    }
+
+    &__title {
+        color: $white;
+        font-family: $aleo;
+        font-size: 36px;
+        font-weight: 400;
+        text-align: left;
+        text-transform: capitalize;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            margin-bottom: 60px;
+        }  
+    }
+
+    &__text-holder {
+        color: $white;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.1em;
+        margin-bottom: 20px;
+
+        @include respond-to('laptop') {
+            margin-bottom: 47px;
+        } 
+
+        p {
+            margin-bottom: 23px;   
+        }
+  
+    }
+
+    &__image-holder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+
+        @include respond-to('laptop') {
+            width: 43%;
+        }  
+    }
+
+    &__image {
+        width: 70%;
+
+        @include respond-to('laptop') {
+            max-width: 350px;
+        }  
+
+        &:nth-child(even) {
+            align-self: flex-end;
+            padding-top: 5px;
+        }
+    }  
+}
+
+

@@ -1,0 +1,150 @@
+.intro {
+
+    &__holder {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    &__form-holder {
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title-holder {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        color: $white;
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    &__subtitle {
+        display: block;
+        color: $white;
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 0.31em;
+        padding: 15px 0 20px;
+    }
+
+    &__input-holder {
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @include respond-to('tablet') {
+            margin-bottom: 100px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        height: 60px; 
+        font-size: 20px;
+        font-family: $josefinsans;
+        border: none;
+        outline: 0;
+        outline-offset: 0;
+        padding: 10px 22px;
+        margin-bottom: 30px;
+
+        @include respond-to('laptop') {
+            padding: 10px 170px 10px 20px;
+        }
+
+        &::placeholder {
+            color: $grey;
+            font-family: $josefinsans;
+            font-size: 14px;
+            letter-spacing: 0.2em;
+            text-align: center;
+            text-transform: capitalize;
+
+
+            @include respond-to('laptop') {
+                text-align: left;
+                padding: 0 105px;
+            }
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $white;
+        background-color: $blue;
+        font-family: $aleo;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        outline: 0;
+        cursor: pointer;
+        border: none;
+        padding: 18px 0 18px 35px;
+
+        @include respond-to('laptop') {
+            position: absolute;
+            top: 2px;
+            right: 2px;
+
+            &:active {
+                background-color: $alt-blue;
+                transition: background 0.1s ease-in-out;
+            }
+        }
+    }
+}
+
+.scroll {
+    display: none;
+
+    @include respond-to('tablet') {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        color: $white;
+        font-size: 14px;
+        text-transform: capitalize;
+    }
+
+    span {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+    }
+}
+
+.icon-search:before {
+    content: "\e936";
+    font-size: 20px;
+    padding: 0 15px;
+}
+
+.icon-angle-down:before {
+    content: "\f107";
+    color: $white;
+}

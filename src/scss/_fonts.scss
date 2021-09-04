@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/Aleo/Regular/aleo-regular-webfont.eot');
+    src: url('../fonts/Aleo/Regular/aleo-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo/Regular/aleo-regular-webfont.woff2') format('woff2'),
+         url('../fonts/Aleo/Regular/aleo-regular-webfont.woff') format('woff'),
+         url('../fonts/Aleo/Regular/aleo-regular-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo/Regular/aleo-regular-webfont.svg#ralewaythin') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.eot');
+    src: url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.woff2') format('woff2'),
+         url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.woff') format('woff'),
+         url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo/Regular-Italic/aleo-italic-webfont.svg#ralewaythin') format('svg');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/Aleo/Bold/aleo-bold-webfont.eot');
+    src: url('../fonts/Aleo/Bold/aleo-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo/Bold/aleo-bold-webfont.woff2') format('woff2'),
+         url('../fonts/Aleo/Bold/aleo-bold-webfont.woff') format('woff'),
+         url('../fonts/Aleo/Bold/aleo-bold-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo/Bold/aleo-bold-webfont.svg#ralewaythin') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'aleo';
+    src: url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.eot');
+    src: url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.woff2') format('woff2'),
+         url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.woff') format('woff'),
+         url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.ttf') format('truetype'),
+         url('../fonts/Aleo/Bold-Italic/aleo-bolditalic-webfont.svg#ralewaythin') format('svg');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'josefinsans';
+    src: url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.eot');
+    src: url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.woff2') format('woff2'),
+         url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.woff') format('woff'),
+         url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.ttf') format('truetype'),
+         url('../fonts/JosephinSans/josefinsans-variablefont_wght-webfont.svg#josefin_sansthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

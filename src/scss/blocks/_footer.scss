@@ -1,0 +1,101 @@
+.footer {
+    background-color: $dark-grey;
+
+    &__holder {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 120px 0 30px;        
+    }
+
+    &__title {
+        color: $white;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+    }
+
+    &__subtitle {
+        color: $white;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: capitalize;
+        letter-spacing: 0.1em;
+        padding: 20px;
+    }
+}
+
+.social {
+
+    &__list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0 -12px;
+    }
+
+    &__item {
+        padding: 12px;
+
+        @include respond-to('desktop') {
+            :hover {
+                color: $facebook-blue;
+                transition: color 0.2s ease-in-out;
+            }
+    
+            &:nth-child(2) {
+                :hover {
+                    color: $twitter-blue;
+                }
+            }
+    
+            &:nth-child(3) {
+                :hover {
+                    color: $linkedin-blue;
+                }
+            }
+    
+            &:nth-child(4) {
+                :hover {
+                    color: $youtube-red;
+                }
+            }
+    
+            &:nth-child(5) {
+                :hover {
+                    color: $pinterest-red;
+                }
+            }
+        }
+    }
+
+    &__link {
+        color: $white;
+        padding: 20px 10px;
+    }
+}
+
+.icon-facebook:before {
+    content: "\f09a";
+    line-height: 20px;
+}
+
+.icon-twitter:before {
+    content: "\f099";
+}
+
+.icon-linkedin:before {
+    content: "\f0e1";
+}
+
+.icon-youtube-play:before {
+    content: "\f16a";
+}
+
+.icon-pinterest:before {
+    content: "\f0d2";
+}

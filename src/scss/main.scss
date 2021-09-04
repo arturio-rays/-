@@ -1,0 +1,49 @@
+@import "variables";
+@import "reset";
+@import "fonts";
+@import "icons";
+@import "mixins";
+@import "blocks/header";
+@import "pages/main-page/index";
+@import "blocks/footer";
+
+body {
+    font-family: $josefinsans;
+    font-weight: 400;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.btn {
+    max-width: 225px;
+    background: linear-gradient(48deg, #496bfe 0%,#496bfe 39%,#5474fd 40%,#5474fd 100%);
+    font-family: $aleo;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    @include respond-to('desktop') {        
+        &:hover {
+            background: linear-gradient(48deg, #5474fd 0%,#5474fd 39%,#496bfe 40%,#496bfe 100%);
+            transition: background 0.2s ease-in-out;
+        }
+
+        &:active {
+            background-color: $alt-blue;
+        }
+    } 
+    
+
+    &__link {
+        display: block;
+        color: $white;
+        padding: 24px 38px;
+    }
+}
